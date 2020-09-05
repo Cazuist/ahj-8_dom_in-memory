@@ -1,0 +1,70 @@
+table {
+  width: 600px;
+  border-collapse: collapse;
+}
+
+caption {  
+  margin-bottom: 10px;
+
+  color: gray;
+  font-size: 20px;
+  font-style: italic;
+  text-align: right;
+  text-decoration: underline;
+}
+
+th {
+  height: 30px;
+
+  background-color: lightgreen;
+  font-size: 18px;
+  font-family: 'Tahoma';
+}
+
+td, th {
+  border: 2px solid darkgreen;
+}
+
+td {
+  height: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+tr td:nth-child(2) {
+  padding-left: 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(2n + 1) {
+  background-color: maroon;
+  color: white;
+}
+
+thead th {
+  position: relative;
+}
+
+/*th {
+  
+  background-image: url('../img/sort.png');
+  background-repeat: no-repeat;
+
+  background-size: 40px;
+  background-position: right 8px center;
+}*/
+
+th span {
+  display: block;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  width: 11px;
+  height: 100%;
+
+  background-image: url('../img/sort.png');
+  background-repeat: no-repeat;
+  background-size: 50px;
+
+  background-position: -35px center;
+}
